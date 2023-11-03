@@ -123,7 +123,8 @@ import com.example.android.codelab.animation.ui.Amber600
 import com.example.android.codelab.animation.ui.AnimationCodelabTheme
 import com.example.android.codelab.animation.ui.Green300
 import com.example.android.codelab.animation.ui.Green800
-import com.example.android.codelab.animation.ui.Purple100
+import com.example.android.codelab.animation.ui.GreyFondo
+import com.example.android.codelab.animation.ui.MoradoFondo
 import com.example.android.codelab.animation.ui.Purple700
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.delay
@@ -185,7 +186,7 @@ fun Home() {
     val lazyListState = rememberLazyListState()
 
     // The background color. The value is changed by the current tab.
-    val backgroundColor by animateColorAsState(if (tabPage == TabPage.Home) Purple100 else Green300)
+    val backgroundColor by animateColorAsState(if (tabPage == TabPage.Home) GreyFondo else MoradoFondo)
 
     // The coroutine scope for event handlers calling suspend functions.
     val coroutineScope = rememberCoroutineScope()
